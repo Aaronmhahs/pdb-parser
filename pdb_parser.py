@@ -10,6 +10,10 @@ import datetime
 # Set charge of bound ligand
 LIG_CHARGE = 1
 
+# Set system information
+NUM_CORES = 8
+MEMORY = 16
+
 # Check for proper command line usage
 if len(sys.argv) != 2:
 	print "Error: invalid command line arguments."
@@ -54,9 +58,9 @@ print "}\n"
 
 print "set freeze_core true\n"
 
-print "memory 16 Gb\n"
+print "memory " + MEMORY + " Gb\n"
 
-print "set_num_threads(8)\n"
+print "set_num_threads(" + NUM_CORES + ")\n"
 
 print "cp('dfmp2')"
 
