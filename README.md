@@ -1,5 +1,7 @@
 Project: pdb_parser v1.0
+
 Authors: Aaronmhahs
+
 Date: Jun 28, 2016
 
 Description: pdb_parser is a python script which parses through inputted .pdb files for molecular dynamics information.
