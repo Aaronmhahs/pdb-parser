@@ -7,6 +7,9 @@ import sys
 import os
 import datetime
 
+# Set author of output file
+AUTHOR = "Aaron Hahs "
+
 # Set charge of bound ligand
 LIG_CHARGE = 1
 
@@ -23,7 +26,7 @@ if len(sys.argv) != 2:
 # File header information
 print "#! " + os.path.splitext(sys.argv[1])[0] + " after equilibration"
 print "#! DFMP2 calculation"
-print "#! Aaron Hahs " + datetime.date.today().strftime('%d, %b %Y') 
+print "#! " + str(AUTHOR) + datetime.date.today().strftime('%d, %b %Y') 
 print "molecule " + os.path.splitext(sys.argv[1])[0] + "{"
 print "0 1"
 	
@@ -58,9 +61,9 @@ print "}\n"
 
 print "set freeze_core true\n"
 
-print "memory " + MEMORY + " Gb\n"
+print "memory " + str(MEMORY) + " Gb\n"
 
-print "set_num_threads(" + NUM_CORES + ")\n"
+print "set_num_threads(" + str(NUM_CORES) + ")\n"
 
 print "cp('dfmp2')"
 
