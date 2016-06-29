@@ -10,8 +10,9 @@ Requirements:
 - Python
 
 Options:
-- Set ligand charge in pdb_parser.py line 11 
-- Set system information in pdb_parser.py lines 14-15  
+- Set author of resulting file in pdb_parser.py line 11
+- Set ligand charge in pdb_parser.py line 14 
+- Set system information in pdb_parser.py lines 17-18  
 
 Useage: "python pdb_parser.py [input file] > [output file]".
 
